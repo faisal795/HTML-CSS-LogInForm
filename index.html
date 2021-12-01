@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty Form</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@300;600&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            transition: all .2s;
+        }
+        html{
+            font-size: 62.5%;  
+            font-family: 'M PLUS 1 Code', sans-serif;
+        }
+        body{
+            width: 100vw;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: #264b1f;
+        }
+        .box {
+            width: 30rem;
+            height: auto;
+            background: rgb(17, 17, 27);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column;
+            border-radius: 2rem;
+        }
+        .box h1{
+            color: #fff;
+            padding: 1rem 0 2rem 0;
+            font-size: 4rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .box [type="text"], .box [type="password"] {
+            width: 20rem;
+            display: block;
+            margin: 1rem auto;
+            text-align: center;
+            border: none;
+            outline: none;
+            background: transparent;
+            border: .2rem solid #1f374b;
+            padding: 1rem;
+            border-radius: 5rem;
+            color: #fff;
+            left: 1px;
+            font-size: 1.5rem;
+        }
+        .box [type="text"]:focus, .box [type="password"]:focus{
+            width: 28rem;
+            border: .2rem solid #264b1f;
+        }
+        .box [type="submit"]{
+            padding: .8rem 1.5rem;
+            color: #fff;
+            outline: none;
+            border: .2rem solid #264b1f;
+            background: none;
+            margin: 1rem;
+            font-size: 2rem;
+            border-radius: 2rem;
+            box-shadow: 1px 1px 7px rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+        }
+        .box [type="submit"]:hover {
+            background: #264b1f;
+        }
+    </style>
+
+</head>
+<body>
+    
+  <form class="box" action="#" method="post">
+
+    <h1>Log In</h1>
+    <input type="text" placeholder="username" name="" id="">
+    <input type="password" placeholder="password" name="" id="">
+    <input type="submit" value="log In">
+
+  </form>
+</body>
+</html>
